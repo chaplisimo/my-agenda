@@ -1,0 +1,1 @@
+function clock(e){var a=new Date,b=a.getHours(),c=a.getMinutes(),a=a.getSeconds(),d="AM";12<b&&(d="PM",b-=12);0==b&&(b=12);9>=c&&(c="0"+c);9>=a&&(a="0"+a);e.value=b+":"+c+":"+a+" "+d;setTimeout(clock,1E3, e)};
